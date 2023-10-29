@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900');
+
+body{
+    font-family: 'Poppins', sans-serif;
+	font-weight: 300;
+	font-size: 15px;
+	line-height: 1.7;
+	color: #c4c3ca;
+	background-color: black;
+	overflow-x: hidden;
+}
+
+.divtitulo {
+	text-align: center;
+    
+    font-size: xx-large;
+    font-weight: 700;
+    margin-top: 50px;
+}
+
+.form{
+	width: 600px;
+	height: 550px;
+	padding: 40px;
+    margin-top: 60px;
+    margin-left: 500px;
+    border-radius: 8px;
+    background-color:rgba(255,255,255,0.13);
+}
+
+/*.divtexto{
+	margin-top: 50px;
+    display: inline;
+    margin-bottom: 35px;
+    float: left;
+    margin-left: 70px;
+    width: 100px;
+    text-align: center;
+    list-style-type: none;
+    background-color:rgba(255,255,255,0.13);
+    margin-right: 10px;
+    padding: 8px 8px  8px;
+    height: auto;
+    border-radius: 5px;
+}*/
+
+.divtexto1{
+	margin-left: 15px;
+}
+
+.label{
+	display: block;
+	padding: 15px;
+}
+
+.input{
+	width: 480px;
+	margin-left: 15px;
+	border-radius: 5px;
+}
+
+.inputmotivo{
+	width: 480px;
+	height: 80px;
+	margin-left: 15px;
+	border-radius: 5px;
+}
+
+.button{
+    width: 450px;
+    margin-top: 40px;
+    margin-left: 40px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    text-align: center;
+    border-radius: 8px;
+    transition: width 2s, height 4s;
+}
+
+.button:before{
+    content: '';
+    background: linear-gradient(45deg,#ff0000,#ff7300,#fffb00,#48ff00,#00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.button:active{
+    color: #000;
+}
+
+.button:active:after{
+    background: transparent;
+}
+
+.button:hover:before{
+    opacity: 1;
+}
+
+.button:after{
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+button :hover{
+    width: 100px;
+    height: 100px;
+}
